@@ -1,0 +1,7 @@
+//查看java方法的参数类型
+javap -s -p 包名.类名
+
+//调用如下方法的时候，第一个参数avFormatContext需要初始化为0
+avformat_open_input(&avFormatContext, this->dataSource, NULL, NULL);
+
+strlen方法返回来的长度不包括\0，所以初始化的要+1
